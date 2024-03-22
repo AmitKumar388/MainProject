@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(https://images.unsplash.com/photo-1508615121316-fe792af62a63?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)";>
+  <header>
+    <img src="/Images/logo.png" class="img" alt="">
+     <a href="index1.html" style="color: black;">  <h3 style="color: yellow;">CampusCode</h3></a>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="Leaderboard/contest.html" id="contestBtn">Contest</a></li>
+            <li>
+                <a href="#">Theory ▾</a>
+                <ul class="dropdown">
+                    <li><a href="contentC.html">C</a></li>
+                    <li><a href="c++.html">C++</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="java - Copy.html">Java</a></li>
+                </ul>
+            </li>
+            <li><a href="Leaderboard/contest.css" id="leaderboardBtn">Leaderboard</a></li>
+            <li><a href="Leaderboard/profile.html" id="profileBtn">Profile</a></li>
+            </ul>
+      </div>
+    </nav>
+</header>
+    <div class="container">
+       <div class="threeD-image"></div>
+      
+    <div class="editor-container">
+        <div id="editor">import java.util.*;
+          class CampusCode{
+              public static void main(String args[]){
+                  // write your code here
+              }
+          }</div>
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.7/ace.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.7/ext-language_tools.js"></script>
+    <script>
+    let editor = document.querySelector("#editor");
+
+        ace.edit(editor,{
+            theme: 'ace/theme/cobalt',
+            mode:"ace/mode/java"
+        })</script>
+</body>
+</html>

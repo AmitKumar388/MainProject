@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusCode</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="login.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                 <img src="../Images/logo.png" alt="logo"> 
+               <a href="../index1.html" style="text-decoration: none;"> <h2 style="color: yellow;">CampusCode</h2></a>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+    <div class="image">
+        <img src="../Images/login-removebg-preview.png" alt="">
+    </div>
+    <div class="flex">
+        <img src="../Images/logo.png">
+        <h1>CampusCode</h1>
+    </div>
+
+
+ 
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password ?</a>
+                    <button type="submit">Log In</button>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+     <form action="https://sheetdb.io/api/v1/pua0a6e98pyz3" method="post" id="sheetdb-form">
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                    <div class="input-field">
+                        <input type="text" required name="data[name]">
+                        <label>Enter your name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required name="data[email]">
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required name="data[number]">
+                        <label>Enter your mobile number</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required name="data[password]">
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit" id="submit">Sign Up</button>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script>
+    
+     var form = document.getElementById('sheetdb-form');
+     form.addEventListener("submit", e =>{
+        e.preventDefault();
+        fetch(form.action, {
+            method:"post",
+            body: new FormData(document.getElementById("sheetdb-form")),
+        }).then(
+            response => response.json()
+        ).then((html) => {
+            window.open('../index1.html','login.html');
+        });
+     });
+
+</script>
+</body>
+</html>

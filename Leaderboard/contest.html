@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest</title>
+    <link rel="stylesheet" href="contest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-image: url(https://images.unsplash.com/photo-1508615121316-fe792af62a63?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+    <div class="container">
+        <header>
+            <img src="/Images/logo.png" class="img" alt="">
+            <a href="../index1.html"><h3 style="color: yellow;">CampusCode</h3></a>
+        
+            <nav class="nav">
+                <ul>
+                    <li><a href="../Leaderboard/contest.html" id="contestBtn">Contest</a></li>
+                    <li>
+                        <a href="#">Theory ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="../contentC.html">C</a></li>
+                            <li><a href="../c++.html">C++</a></li>
+                            <li><a href="../html.html">HTML</a></li>
+                            <li><a href="../java - Copy.html">Java</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Leaderboard/leaderboard.html" id="leaderboardBtn">Leaderboard</a></li>
+                    <li><a href="../Leaderboard/profile.html" id="profileBtn">Profile</a></li>
+              </div>
+            </nav>
+        </header>
+          <div class="coding-contest">
+            
+            <div id="aptitudeBtn" class="aptitude-contest-heading">
+                <h3>Aptitude Contest</h3>
+            </div>
+            <div id="codingBtn" class="coding-contest-heading">
+                <h2>Coding Contest</h2>
+            </div>
+            <div id="theoryBtn" class="theory-contest-heading">
+                <h3>Theory Contest</h3>
+            </div>
+          </div>
+          <div class="upcoming-previous-contest">
+            <div class="upcoming" style="background-image: url(https://cdn.pixabay.com/photo/2016/05/08/14/58/icon-1379228_1280.png); background-size: cover;">
+                <h1>Upcoming Contest</h1>
+                <hr>
+                <ul>
+                <li>Weekly Contest</li>
+                <ul>
+                   <a href="../ide.html" style="color: black;"><li>19/03/2024 <button style="cursor: pointer;">Participate/Register</button></li></a> 
+                   <a href="../ide.html" style="color: black;"> <li>26/04/2024 <button style="cursor: pointer;">Participate/Register</button></li></a>
+                </ul> 
+            </ul>
+            <ul>
+                <li>Monthly Contest</li>
+                <ul>
+                    <li>01/04/2024  <button>Participate/Register</button></li>
+                    <li>01/05/2024  <button>Participate/Register</button></li>
+                </ul>
+           </ul>
+            </div>
+            <div class="previous" style="background-image: url(https://cdn.pixabay.com/photo/2016/05/08/14/58/icon-1379228_1280.png); background-size: cover;">
+                <h1>Previous Contest</h1>
+                <hr>
+                <ul>
+                <li>Weekly Contest</li>
+                <ul>
+                    <li>18/03/2024 <button>View</button></li>
+                    <li>11/03/2024 <button>View</button></li>
+                </ul>
+            </ul>
+                <ul>
+                <li>Monthly Contest</li>
+                <ul><li>01/01/2024 <button>View</button></li>
+                    <li>01/02/2024 <button>View</button></li>
+                    
+                </ul>
+            </ul>
+            
+            </div>
+          </div>
+          <footer>
+            <div class="footer-content">
+                <h3>CampusCode</h3>
+                <p>
+                    "Join our coding community for skill enhancement, networking, tips, tutorials, challenges, and mutual learning. 
+                    Follow us on social media to level up your coding skills and stay updated with coding resources."
+                </p>
+                <h4>Email : campuscodemaster@gmail.com </h4>
+                <ul class="socials">
+                    <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/CampuscodeM" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCjGM5B_1IXuI2ZHdo24mDbA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/102255524/admin/feed/posts/" target="_blank"><i class="fa fa-linkedin-square" ></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2024 CampusCode. designed by <span>4 error</span></p>
+            </div>
+        </footer>
+       
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('profileBtn').addEventListener('click', function() {
+            window.location.href = 'profile.html';
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('leaderboardBtn').addEventListener('click', function() {
+            window.location.href = 'leaderboard.html';
+        });
+    });
+</script>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const aptitudeBtn = document.getElementById('aptitudeBtn');
+        const contestContainer = document.querySelector('.upcoming-previous-contest');
+
+        aptitudeBtn.addEventListener('click', function() {
+            // Replace the content with new HTML
+            contestContainer.innerHTML = `
+                <div class="upcoming">
+                
+                </div>
+                <div class="previous">
+                    New previous contest content goes here 
+                </div>
+            `;
+        });
+    });
+</script> -->
+</html>
